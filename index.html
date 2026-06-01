@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WILSON Portfolio — Tuodjou Arcel Wilson</title>
+  <meta name="description" content="Portfolio de Tuodjou Arcel Wilson — Développeur Full-Stack & Cybersécurité" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;700&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Liquid glass blobs -->
+  <div class="liquid-bg">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+    <div class="blob blob--4"></div>
+    <div class="blob blob--5"></div>
+  </div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- Skip -->
+  <a class="skip-link" href="#accueil">Aller au contenu</a>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#accueil" class="navbar__logo">
+        <div class="logo-pill">
+          <span class="logo-dot"></span>
+          <span>WILSON</span>
+        </div>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Navigation">
+        <a href="#accueil"  class="nav-link" data-section="accueil">Accueil</a>
+        <a href="#apropos"  class="nav-link" data-section="apropos">À propos</a>
+        <a href="#projets"  class="nav-link" data-section="projets">Projets</a>
+        <a href="#contact"  class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button id="themeToggle" class="ios-pill-btn" aria-label="Thème">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <a href="#contact" class="ios-cta-btn">
+          Me contacter
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5h10M6.5 1.5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#accueil"  class="mobile-nav__link">Accueil</a>
+      <a href="#apropos"  class="mobile-nav__link">À propos</a>
+      <a href="#projets"  class="mobile-nav__link">Projets</a>
+      <a href="#contact"  class="mobile-nav__link">Contact</a>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section id="accueil" class="hero">
+    <div class="hero__container">
+
+      <!-- Left -->
+      <div class="hero__left">
+        <div class="hero__eyebrow">
+          <span class="live-dot"></span>
+          <span>Disponible pour des missions</span>
+        </div>
+
+        <h1 class="hero__name">
+          <span class="name-line">TUODJOU</span>
+          <span class="name-line name-line--gradient">ARCEL</span>
+          <span class="name-line">WILSON</span>
+        </h1>
+
+        <div class="hero__role">
+          <span>Je suis </span>
+          <span class="typewriter" id="typewriter"></span>
+        </div>
+
+        <p class="hero__bio">
+          Développeur Full-Stack passionné par la cybersécurité. Je conçois des applications
+          web modernes, fluides et nativement sécurisées — de l'architecture au pixel final.
+        </p>
+
+        <div class="hero__chips">
+          <span class="ios-chip">developement web</span>
+          <span class="ios-chip">pentesting</span>
+          <span class="ios-chip">outils AI</span>
+          <span class="ios-chip">HTML5</span>
+          <span class="ios-chip">CSS3</span>
+          <span class="ios-chip">JavaScript</span>
+          <span class="ios-chip">Python</span>
+          <span class="ios-chip ios-chip--accent">Cybersécurité</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#projets" class="ios-btn-primary">
+            <span>Voir mes projets</span>
+            <div class="btn-shine"></div>
+          </a>
+          <a href="#contact" class="ios-btn-ghost">Travaillons ensemble</a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="mailto:wilsonjbrs444@icloud.com" class="social-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+          <a href="https://wa.me/237675506930" target="_blank" rel="noopener" class="social-pill social-pill--green">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.tiktok.com/@og_26w_dev" target="_blank" rel="noopener" class="social-pill social-pill--tiktok">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.28 8.28 0 0 0 4.84 1.54V6.78a4.85 4.85 0 0 1-1.07-.09z"/></svg>
+            TikTok
+          </a>
+          <a href="https://github.com/wilsonjbrs444-max" target="_blank" rel="noopener" class="social-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/arcel-wilson-9500833a8" target="_blank" rel="noopener" class="social-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: photo -->
+      <div class="hero__right">
+        <div class="hero__photo-wrap">
+          <div class="photo-aura"></div>
+          <div class="photo-ring-orbit">
+            <div class="orbit-dot orbit-dot--1"></div>
+            <div class="orbit-dot orbit-dot--2"></div>
+          </div>
+          <div class="photo-glass-frame">
+            <img src="profile.jpg" alt="Portrait de Tuodjou Arcel Wilson" class="photo-img" loading="eager" />
+            <div class="photo-shimmer"></div>
+          </div>
+          <!-- Floating iOS widgets -->
+          <div class="ios-widget ios-widget--tl">
+            <div class="ios-widget__icon">⚡</div>
+            <div class="ios-widget__text">
+              <span class="ios-widget__label">Stack</span>
+              <span class="ios-widget__val">Full-Stack Dev</span>
+            </div>
+          </div>
+          <div class="ios-widget ios-widget--br">
+            <div class="ios-widget__icon">🔒</div>
+            <div class="ios-widget__text">
+              <span class="ios-widget__label">Focus</span>
+              <span class="ios-widget__val">Cybersécurité</span>
+            </div>
+          </div>
+          <div class="ios-widget ios-widget--status">
+            <div class="live-dot live-dot--sm"></div>
+            <span>open work</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-bar"><div class="scroll-bar__fill"></div></div>
+    </div>
+  </section>
+
+  <!-- ══════════ À PROPOS ══════════ -->
+  <section id="apropos" class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-eyebrow">01 — À propos</span>
+        <h2 class="section-title">Ce que j'apporte<br/><em>à chaque projet</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="ios-card" data-reveal data-delay="100">
+          <div class="ios-card__icon-wrap ios-card__icon-wrap--blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Développement</h3>
+          <p>Interfaces web fluides, responsives et propres. Architecture frontend claire, maintenable et évolutive.</p>
+        </div>
+
+        <div class="ios-card" data-reveal data-delay="200">
+          <div class="ios-card__icon-wrap ios-card__icon-wrap--purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Sécurité</h3>
+          <p>Vision sécurité dès la conception. Audit réseau et pentesting intégrés dès le départ.</p>
+        </div>
+
+        <div class="ios-card" data-reveal data-delay="300">
+          <div class="ios-card__icon-wrap ios-card__icon-wrap--teal">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Python</h3>
+          <p>Intégration backend Python quand le produit l'exige. APIs robustes, logique métier propre.</p>
+        </div>
+
+        <div class="ios-card" data-reveal data-delay="300">
+            <div class="ios-card__icon-wrap ios-card__icon-wrap--teal">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>outils AI</h3>
+            <p>utilisation avancé des outils AI dans l optique de mutiplier le rendement et aller plus vite .</p>
+          </div>
+
+        <div class="ios-card ios-card--wide" data-reveal data-delay="150">
+          <h3>Stack principale</h3>
+          <div class="stack-grid">
+            <div class="stack-pill"><span>🌐</span> HTML5</div>
+            <div class="stack-pill"><span>🎨</span> CSS3</div>
+            <div class="stack-pill"><span>⚡</span> JavaScript</div>
+            <div class="stack-pill"><span>🐍</span> Python</div>
+            <div class="stack-pill"><span>🔧</span> Git</div>
+            <div class="stack-pill"><span>🐧</span> Linux</div>
+            <div class="stack-pill"><span>🔍</span> Audit réseau</div>
+            <div class="stack-pill"><span>🔒</span> Pentesting</div>
+            <div class="stack-pill"><span></span> autre </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJETS ══════════ -->
+  <section id="projets" class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-eyebrow">02 — Projets</span>
+        <h2 class="section-title">Mes réalisations<br/><em>récentes</em></h2>
+        <p class="section-sub"> </p>
+      </div>
+
+      <!-- Featured -->
+      <article class="project-hero ios-card" data-reveal>
+        <div class="project-hero__media">
+          <div class="preset preset--blue">
+            <div class="preset__grid"></div>
+            <div class="preset__dots"><span></span><span></span><span></span></div>
+            <div class="preset__body">
+              <span class="preset__tag">Web App</span>
+              <h3 class="preset__name">neowork</h3>
+              <p class="preset__sub">Plateforme de mise en relation</p>
+            </div>
+            <!-- <img src="assets/freelancematch.jpg" alt="FreelanceMatch" class="preset__real" /> -->
+            <img src="Gemini_Generated_Image_i99lw2i99lw2i99l.png" alt="">
+            
+          </div>
+        </div>
+        <div class="project-hero__body">
+          <span class="project-pill">⭐ Projet principal</span>
+          <h3>neowork</h3>
+          <p>Application web de mise en relation entre freelances et clients. Publication de missions, consultation de profils et parcours de contact clair et efficace.</p>
+          <div class="tech-row">
+            <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JavaScript</span><span class="tech tech--py">Python</span>
+          </div>
+          <div class="project-actions">
+            <a href="#contact" class="ios-btn-primary ios-btn-sm">
+              Discuter du projet
+              <div class="btn-shine"></div>
+            </a>
+            <a href="https://github.com/wilsonjbrs444-max" target="_blank" rel="noopener" class="ios-btn-ghost ios-btn-sm">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Grid 4 projets -->
+      <div class="projects-grid">
+
+        <article class="project-card ios-card" data-reveal data-delay="100">
+          <div class="project-card__media">
+            <div class="preset preset--teal">
+              <div class="preset__grid"></div>
+              <div class="preset__dots"><span></span><span></span><span></span></div>
+              <div class="preset__body">
+                <span class="preset__tag">Dashboard</span>
+                <h3 class="preset__name">Dashboard<br/>Sécurisé</h3>
+              </div>
+              <!-- <img src="assets/dashboard.jpg" alt="Dashboard" class="preset__real" /> -->
+               <img src="images.jpg" alt="">
+               <img src="images.jpg" alt="">
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Dashboard Sécurisé</h3>
+            <p>Tableau de bord moderne pour suivi d'activités et gestion de profils, focus UX et validation côté client.</p>
+            <div class="tech-row">
+              <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JS</span><span class="tech tech--py">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card ios-card" data-reveal data-delay="200">
+          <div class="project-card__media">
+            <div class="preset preset--purple">
+              <div class="preset__grid"></div>
+              <div class="preset__dots"><span></span><span></span><span></span></div>
+              <div class="preset__body">
+                <span class="preset__tag">Sécurité</span>
+                <h3 class="preset__name">Audit<br/>Réseau</h3>
+              </div>
+              <!-- <img src="assets/network-audit.jpg" alt="Audit Réseau" class="preset__real" /> -->
+               <img src="fichier copié.jpg" alt="">
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Assistant d'Audit Réseau</h3>
+            <p>Outil web pour structurer les observations d'audit, centraliser les points critiques et générer des rapports.</p>
+            <div class="tech-row">
+              <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JS</span><span class="tech tech--py">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card ios-card" data-reveal data-delay="300">
+          <div class="project-card__media">
+            <div class="preset preset--amber">
+              <div class="preset__grid"></div>
+              <div class="preset__dots"><span></span><span></span><span></span></div>
+              <div class="preset__body">
+                <span class="preset__tag">Immobilier</span>
+                <h3 class="preset__name">Gestionnaire<br/>d'Immeubles</h3>
+              </div>
+              <!-- <img src="assets/immeuble.jpg" alt="Gestionnaire Immeubles" class="preset__real" /> -->
+               <img src="fichier copi.jpg" alt="">
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Gestionnaire d'Immeubles</h3>
+            <p>Application de gestion immobilière : suivi locataires, paiements de loyers, états des lieux et tableau de bord propriétaire.</p>
+            <div class="tech-row">
+              <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JS</span><span class="tech tech--py">Python</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card--add ios-card" data-reveal data-delay="400">
+          <div class="add-inner">
+            <div class="add-ring">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+            <p>Prochain projet</p>
+            <span>Bientôt disponible</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <span class="section-eyebrow">03 — Contact</span>
+        <h2 class="section-title">Démarrons<br/><em>quelque chose</em></h2>
+        <p class="section-sub">Un besoin, une mission, une collaboration ? Écris-moi directement.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-channels" data-reveal>
+          <a href="mailto:wilsonjbrs444@icloud.com" class="channel-card">
+            <div class="channel-card__icon channel-card__icon--blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="channel-card__label">Email</p>
+              <p class="channel-card__val">wilsonjbrs444@icloud.com</p>
+            </div>
+            <svg class="channel-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://wa.me/237675506930" target="_blank" rel="noopener" class="channel-card channel-card--whatsapp">
+            <div class="channel-card__icon channel-card__icon--green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div>
+              <p class="channel-card__label">WhatsApp</p>
+              <p class="channel-card__val">+237 675 506 930</p>
+            </div>
+            <svg class="channel-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://www.tiktok.com/@og_26w_dev" target="_blank" rel="noopener" class="channel-card channel-card--tiktok">
+            <div class="channel-card__icon channel-card__icon--tiktok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.28 8.28 0 0 0 4.84 1.54V6.78a4.85 4.85 0 0 1-1.07-.09z"/></svg>
+            </div>
+            <div>
+              <p class="channel-card__label">TikTok</p>
+              <p class="channel-card__val">@og_26w_dev</p>
+            </div>
+            <svg class="channel-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://github.com/wilsonjbrs444-max" target="_blank" rel="noopener" class="channel-card">
+            <div class="channel-card__icon channel-card__icon--gray">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div>
+              <p class="channel-card__label">GitHub</p>
+              <p class="channel-card__val">wilsonjbrs444-max</p>
+            </div>
+            <svg class="channel-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/arcel-wilson-9500833a8" target="_blank" rel="noopener" class="channel-card">
+            <div class="channel-card__icon channel-card__icon--blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <p class="channel-card__label">LinkedIn</p>
+              <p class="channel-card__val">Arcel Wilson</p>
+            </div>
+            <svg class="channel-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="ios-card contact-form-card" data-reveal data-delay="200">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="vous@email.com" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Ex: Mission freelance" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin..."></textarea>
+            </div>
+            <button type="submit" class="ios-btn-primary ios-btn-full">
+              <span id="btnText">Envoyer le message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <div class="btn-shine"></div>
+            </button>
+            <p class="form-note">Ouvre ton client email — sans backend requis.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">WILSON Portfolio</span>
+      <p class="footer__copy">© <span id="year"></span> Tuodjou Arcel Wilson — Tous droits réservés</p>
+      <div class="footer__links">
+        <a href="mailto:wilsonjbrs444@icloud.com">Email</a>
+        <a href="https://wa.me/237675506930" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.tiktok.com/@og_26w_dev" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://github.com/wilsonjbrs444-max" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/arcel-wilson-9500833a8" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
